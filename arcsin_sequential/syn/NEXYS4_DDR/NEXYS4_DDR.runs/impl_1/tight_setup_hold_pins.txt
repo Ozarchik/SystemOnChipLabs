@@ -1,0 +1,14 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_4_input_2_reg[27]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_3_input_2_reg[23]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_3_input_2_reg[27]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_4_input_2_reg[23]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_3_input_2_reg[28]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_5_input_2_reg[27]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_3_input_2_reg[26]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                            teylor_arcsin/result_reg[23]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_5_input_2_reg[23]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_3_input_2_reg[13]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

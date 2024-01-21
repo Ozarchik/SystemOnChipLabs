@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Sun Jan 21 19:33:59 2024
+| Date             : Sun Jan 21 20:26:43 2024
 | Host             : DESKTOP-181Q9KE running 64-bit major release  (build 9200)
 | Command          : report_power -file NEXYS4_DDR_power_routed.rpt -pb NEXYS4_DDR_power_summary_routed.pb -rpx NEXYS4_DDR_power_routed.rpx
 | Design           : NEXYS4_DDR
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.210        |
+| Total On-Chip Power (W)  | 0.252        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.113        |
-| Device Static (W)        | 0.097        |
+| Dynamic (W)              | 0.155        |
+| Device Static (W)        | 0.098        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 99.0         |
-| Junction Temperature (C) | 26.0         |
+| Max Ambient (C)          | 98.8         |
+| Junction Temperature (C) | 26.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        8 |       --- |             --- |
-| Slice Logic    |    <0.001 |      989 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      378 |     63400 |            0.60 |
-|   CARRY4       |    <0.001 |       52 |     15850 |            0.33 |
-|   Register     |    <0.001 |      435 |    126800 |            0.34 |
-|   Others       |     0.000 |       14 |       --- |             --- |
-| Signals        |     0.001 |      817 |       --- |             --- |
+| Clocks         |     0.007 |        8 |       --- |             --- |
+| Slice Logic    |     0.018 |     5490 |       --- |             --- |
+|   LUT as Logic |     0.017 |     3545 |     63400 |            5.59 |
+|   CARRY4       |    <0.001 |      296 |     15850 |            1.87 |
+|   Register     |    <0.001 |      891 |    126800 |            0.70 |
+|   Others       |     0.000 |      124 |       --- |             --- |
+| Signals        |     0.018 |     6468 |       --- |             --- |
 | Block RAM      |     0.002 |        1 |       135 |            0.74 |
 | MMCM           |     0.106 |        1 |         6 |           16.67 |
+| DSPs           |     0.005 |       50 |       240 |           20.83 |
 | I/O            |    <0.001 |       36 |       210 |           17.14 |
-| Static Power   |     0.097 |          |           |                 |
-| Total          |     0.210 |          |           |                 |
+| Static Power   |     0.098 |          |           |                 |
+| Total          |     0.252 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.022 |       0.007 |      0.015 |
+| Vccint    |       1.000 |     0.064 |       0.049 |      0.015 |
 | Vccaux    |       1.800 |     0.077 |       0.059 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -144,16 +145,31 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+--------------------+-----------+
-| Name               | Power (W) |
-+--------------------+-----------+
-| NEXYS4_DDR         |     0.113 |
-|   sys_clk          |     0.106 |
-|     inst           |     0.106 |
-|   testmem          |     0.002 |
-|   udm              |     0.003 |
-|     uart_rx        |     0.001 |
-|     udm_controller |     0.002 |
-+--------------------+-----------+
++-----------------------+-----------+
+| Name                  | Power (W) |
++-----------------------+-----------+
+| NEXYS4_DDR            |     0.155 |
+|   sys_clk             |     0.106 |
+|     inst              |     0.106 |
+|   testmem             |     0.002 |
+|   teylor_arcsin       |     0.040 |
+|     stage_2           |     0.001 |
+|       pe              |     0.001 |
+|     stage_3           |     0.001 |
+|       pe              |     0.001 |
+|     stage_4           |     0.001 |
+|       pe              |     0.001 |
+|     term2             |     0.002 |
+|       F_MultWithCoeff |     0.002 |
+|     term3             |     0.002 |
+|       F_MultWithCoeff |     0.002 |
+|     term4             |     0.002 |
+|       F_MultWithCoeff |     0.002 |
+|     term5             |     0.002 |
+|       F_MultWithCoeff |     0.002 |
+|   udm                 |     0.004 |
+|     uart_rx           |     0.001 |
+|     udm_controller    |     0.002 |
++-----------------------+-----------+
 
 

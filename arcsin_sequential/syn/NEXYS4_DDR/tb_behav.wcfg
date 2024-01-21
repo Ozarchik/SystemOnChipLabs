@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="31880000001fs"></ZoomEndTime>
-      <Cursor1Time time="16000000000fs"></Cursor1Time>
+      <ZoomStartTime time="3058496250fs"></ZoomStartTime>
+      <ZoomEndTime time="3109596251fs"></ZoomEndTime>
+      <Cursor1Time time="3095196000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="437"></NameColumnWidth>
-      <ValueColumnWidth column_width="268"></ValueColumnWidth>
+      <NameColumnWidth column_width="268"></NameColumnWidth>
+      <ValueColumnWidth column_width="264"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
+   <WVObjectSize size="46" />
    <wvobject fp_name="/tb/SW" type="array">
       <obj_property name="ElementShortName">SW[15:0]</obj_property>
       <obj_property name="ObjectShortName">SW[15:0]</obj_property>
@@ -78,5 +78,165 @@
    <wvobject fp_name="/tb/DUT/testmem/ram" type="array">
       <obj_property name="ElementShortName">ram[0:1023][31:0]</obj_property>
       <obj_property name="ObjectShortName">ram[0:1023][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/x" type="array">
+      <obj_property name="ElementShortName">x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/result" type="array">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/term_result_2" type="array">
+      <obj_property name="ElementShortName">term_result_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">term_result_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/term_result_3" type="array">
+      <obj_property name="ElementShortName">term_result_3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">term_result_3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/term_result_4" type="array">
+      <obj_property name="ElementShortName">term_result_4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">term_result_4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/y1" type="array">
+      <obj_property name="ElementShortName">y1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/y2" type="array">
+      <obj_property name="ElementShortName">y2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/y3" type="array">
+      <obj_property name="ElementShortName">y3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/y4" type="array">
+      <obj_property name="ElementShortName">y4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/result_term_1" type="array">
+      <obj_property name="ElementShortName">result_term_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_term_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_1_input_1" type="array">
+      <obj_property name="ElementShortName">stage_1_input_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_1_input_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_1_input_2" type="array">
+      <obj_property name="ElementShortName">stage_1_input_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_1_input_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/exception1" type="logic">
+      <obj_property name="ElementShortName">exception1</obj_property>
+      <obj_property name="ObjectShortName">exception1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_1_result" type="array">
+      <obj_property name="ElementShortName">stage_1_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_1_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/term_2_result" type="array">
+      <obj_property name="ElementShortName">term_2_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">term_2_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_2_input_1" type="array">
+      <obj_property name="ElementShortName">stage_2_input_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_2_input_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_2_input_2" type="array">
+      <obj_property name="ElementShortName">stage_2_input_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_2_input_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_2_result" type="array">
+      <obj_property name="ElementShortName">stage_2_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_2_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/exception2" type="logic">
+      <obj_property name="ElementShortName">exception2</obj_property>
+      <obj_property name="ObjectShortName">exception2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/term_3_result" type="array">
+      <obj_property name="ElementShortName">term_3_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">term_3_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_3_input_1" type="array">
+      <obj_property name="ElementShortName">stage_3_input_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_3_input_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_3_input_2" type="array">
+      <obj_property name="ElementShortName">stage_3_input_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_3_input_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_3_result" type="array">
+      <obj_property name="ElementShortName">stage_3_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_3_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/exception3" type="logic">
+      <obj_property name="ElementShortName">exception3</obj_property>
+      <obj_property name="ObjectShortName">exception3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/term_4_result" type="array">
+      <obj_property name="ElementShortName">term_4_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">term_4_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_4_input_1" type="array">
+      <obj_property name="ElementShortName">stage_4_input_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_4_input_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_4_input_2" type="array">
+      <obj_property name="ElementShortName">stage_4_input_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_4_input_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_4_result" type="array">
+      <obj_property name="ElementShortName">stage_4_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_4_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/exception4" type="logic">
+      <obj_property name="ElementShortName">exception4</obj_property>
+      <obj_property name="ObjectShortName">exception4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/term_5_result" type="array">
+      <obj_property name="ElementShortName">term_5_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">term_5_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_5_input_1" type="array">
+      <obj_property name="ElementShortName">stage_5_input_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_5_input_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_5_input_2" type="array">
+      <obj_property name="ElementShortName">stage_5_input_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_5_input_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/stage_5_result" type="array">
+      <obj_property name="ElementShortName">stage_5_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stage_5_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/exception5" type="logic">
+      <obj_property name="ElementShortName">exception5</obj_property>
+      <obj_property name="ObjectShortName">exception5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/k1" type="array">
+      <obj_property name="ElementShortName">k1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/k2" type="array">
+      <obj_property name="ElementShortName">k2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/k3" type="array">
+      <obj_property name="ElementShortName">k3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/k4" type="array">
+      <obj_property name="ElementShortName">k4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/DUT/teylor_arcsin/k5" type="array">
+      <obj_property name="ElementShortName">k5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k5[31:0]</obj_property>
    </wvobject>
 </wave_config>
