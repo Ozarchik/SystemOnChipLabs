@@ -1,0 +1,23 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/MyStudy/AntonovLabi/activecore/designs/rtl/ram/ram.v,1705252417,verilog,,C:/MyStudy/AntonovLabi/activecore/designs/rtl/ram/ram_dual.v,,ram,,,,,,,,
+C:/MyStudy/AntonovLabi/activecore/designs/rtl/ram/ram_dual.v,1705252417,verilog,,C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingMultiplication.v,,ram_dual,,,,,,,,
+C:/MyStudy/AntonovLabi/activecore/designs/rtl/ram/ram_dual_memsplit.v,1705252417,verilog,,C:/MyStudy/AntonovLabi/activecore/designs/rtl/ram/ram.v,,ram_dual_memsplit,,,,,,,,
+C:/MyStudy/AntonovLabi/activecore/designs/rtl/reset_sync/reset_sync.v,1705252417,verilog,,C:/MyStudy/AntonovLabi/activecore/designs/rtl/ram/ram_dual_memsplit.v,,reset_sync,,,,,,,,
+C:/MyStudy/AntonovLabi/activecore/designs/rtl/udm/syn/NEXYS4_DDR/arcsin_comb.sv,1705262021,systemVerilog,,,,arcsin_comb,,,,,,,,
+C:/MyStudy/AntonovLabi/activecore/designs/rtl/udm/tb/udm.svh,1705252418,verilog,,,,,,,,,,,,
+C:/MyStudy/Lab1/hw/uart_rx.v,1705252418,verilog,,C:/MyStudy/Lab1/hw/udm_controller.v,,uart_rx,,,,,,,,
+C:/MyStudy/Lab1/hw/uart_tx.v,1705252418,verilog,,C:/MyStudy/AntonovLabi/activecore/designs/rtl/reset_sync/reset_sync.v,,uart_tx,,,,,,,,
+C:/MyStudy/Lab1/hw/udm.v,1705252418,verilog,,C:/MyStudy/Lab1/hw/uart_rx.v,,udm,,,,,,,,
+C:/MyStudy/Lab1/hw/udm_controller.v,1705252418,verilog,,C:/MyStudy/Lab1/hw/uart_tx.v,,udm_controller,,,,,,,,
+C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.ip_user_files/ip/sys_clk/sys_clk_sim_netlist.v,1705252858,verilog,,,,sys_clk;sys_clk_sys_clk_clk_wiz,,,,,,,,
+C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v,1705847679,verilog,,,,FloatingAddSub;priority_encoder,,,,,,,,
+C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingMultiplication.v,1705839341,verilog,,,,FloatingMultiplication,,,,,,,,
+C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorAcrsin.sv,1705847699,systemVerilog,,,,TeylorAcrsin,,,,,,,,
+C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv,1705843390,systemVerilog,,,,TeylorTerm,,,,,,,,
+C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.sv,1705851515,systemVerilog,,,,MemSplit32;NEXYS4_DDR,,,,,,,,
+C:/MyStudy/Lab1/tb/tb.sv,1705849927,systemVerilog,,C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.sv,C:/MyStudy/Lab1/tb/udm.svh,tb,,,,,,,,
+C:/MyStudy/Lab1/tb/udm.svh,1705252418,verilog,,,,,,,,,,,,
