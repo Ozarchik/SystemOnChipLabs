@@ -1,0 +1,33 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../NEXYS4_DDR.ip_user_files/ip/sys_clk/sys_clk_sim_netlist.v" \
+
+sv xil_defaultlib  \
+"../../../../../../tb/tb.sv" \
+"../../../../NEXYS4_DDR.sv" \
+
+verilog xil_defaultlib  \
+"../../../../../../hw/udm.v" \
+"../../../../../../hw/uart_rx.v" \
+"../../../../../../hw/udm_controller.v" \
+"../../../../../../hw/uart_tx.v" \
+"../../../../../../../../AntonovLabi/activecore/designs/rtl/reset_sync/reset_sync.v" \
+"../../../../../../../../AntonovLabi/activecore/designs/rtl/ram/ram_dual_memsplit.v" \
+"../../../../../../../../AntonovLabi/activecore/designs/rtl/ram/ram.v" \
+"../../../../../../../../AntonovLabi/activecore/designs/rtl/ram/ram_dual.v" \
+"../../../../NEXYS4_DDR.srcs/sources_1/new/FloatingMultiplication.v" \
+
+sv xil_defaultlib  \
+"../../../../NEXYS4_DDR.srcs/sources_1/new/TeylorAcrsin.sv" \
+
+verilog xil_defaultlib  \
+"../../../../NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v" \
+
+sv xil_defaultlib  \
+"../../../../NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
