@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.xpr">
+<Project Version="7" Minor="40" Path="C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="03603160a2ff4bb7b83a1876f332687d"/>
@@ -32,7 +32,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="190"/>
+    <Option Name="WTXSimLaunchSim" Val="201"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -96,28 +96,28 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../AntonovLabi/activecore/designs/rtl/reset_sync/reset_sync.v">
+      <File Path="$PPRDIR/../../../../AntonovLabi/activecore/designs/rtl/reset_sync/reset_sync.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../AntonovLabi/activecore/designs/rtl/ram/ram_dual_memsplit.v">
+      <File Path="$PPRDIR/../../../../AntonovLabi/activecore/designs/rtl/ram/ram_dual_memsplit.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../AntonovLabi/activecore/designs/rtl/ram/ram.v">
+      <File Path="$PPRDIR/../../../../AntonovLabi/activecore/designs/rtl/ram/ram.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../AntonovLabi/activecore/designs/rtl/ram/ram_dual.v">
+      <File Path="$PPRDIR/../../../../AntonovLabi/activecore/designs/rtl/ram/ram_dual.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

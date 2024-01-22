@@ -19,40 +19,42 @@ proc create_report { reportName command } {
 }
 set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-3
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.cache/wt [current_project]
-set_property parent.project_path C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.xpr [current_project]
+set_property webtalk.parent_dir C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.cache/wt [current_project]
+set_property parent.project_path C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.cache/ip [current_project]
+set_property ip_output_repo c:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
-  C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.sv
-  C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorAcrsin.sv
-  C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv
+  C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.sv
+  C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorAcrsin.sv
+  C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv
 }
 read_verilog -library xil_defaultlib {
-  C:/MyStudy/Lab1/hw/udm.v
-  C:/MyStudy/Lab1/hw/uart_rx.v
-  C:/MyStudy/Lab1/hw/udm_controller.v
-  C:/MyStudy/Lab1/hw/uart_tx.v
+  C:/MyStudy/SystemOnChipLabs/arcsin_combinational/hw/udm.v
+  C:/MyStudy/SystemOnChipLabs/arcsin_combinational/hw/uart_rx.v
+  C:/MyStudy/SystemOnChipLabs/arcsin_combinational/hw/udm_controller.v
+  C:/MyStudy/SystemOnChipLabs/arcsin_combinational/hw/uart_tx.v
   C:/MyStudy/AntonovLabi/activecore/designs/rtl/reset_sync/reset_sync.v
   C:/MyStudy/AntonovLabi/activecore/designs/rtl/ram/ram_dual_memsplit.v
   C:/MyStudy/AntonovLabi/activecore/designs/rtl/ram/ram.v
   C:/MyStudy/AntonovLabi/activecore/designs/rtl/ram/ram_dual.v
-  C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingMultiplication.v
-  C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v
+  C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingMultiplication.v
+  C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v
 }
-read_ip -quiet C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xci
-set_property used_in_implementation false [get_files -all c:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_board.xdc]
-set_property used_in_implementation false [get_files -all c:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc]
-set_property used_in_implementation false [get_files -all c:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_ooc.xdc]
+read_ip -quiet C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xci
+set_property used_in_implementation false [get_files -all c:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_board.xdc]
+set_property used_in_implementation false [get_files -all c:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xdc]
+set_property used_in_implementation false [get_files -all c:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -62,8 +64,8 @@ set_property used_in_implementation false [get_files -all c:/MyStudy/Lab1/syn/NE
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.xdc
-set_property used_in_implementation false [get_files C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
+read_xdc C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.xdc
+set_property used_in_implementation false [get_files C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

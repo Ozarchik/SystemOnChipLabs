@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1'
+HD_PWD='C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,6 +1,5 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/MyStudy/Lab1/tb/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/MyStudy/SystemOnChipLabs/arcsin_combinational/tb/tb.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb
-WARNING: [VRFC 10-3824] variable 'ARRSIZE' must explicitly be declared as automatic or static [C:/MyStudy/Lab1/tb/tb.sv:86]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3824] variable 'ARRSIZE' must explicitly be declared as automatic or static [C:/MyStudy/SystemOnChipLabs/arcsin_combinational/tb/tb.sv:86]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/MyStudy/SystemOnChipLabs/arcsin_combinational/syn/NEXYS4_DDR/NEXYS4_DDR.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module NEXYS4_DDR
-INFO: [VRFC 10-2458] undeclared symbol crs_y_out, assumed default net type wire [C:/MyStudy/Lab1/syn/NEXYS4_DDR/NEXYS4_DDR.sv:144]

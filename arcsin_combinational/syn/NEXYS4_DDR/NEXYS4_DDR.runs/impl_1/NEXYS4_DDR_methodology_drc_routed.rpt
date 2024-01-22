@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jan 21 18:24:23 2024
+| Date         : Mon Jan 22 12:16:54 2024
 | Host         : DESKTOP-181Q9KE running 64-bit major release  (build 9200)
 | Command      : report_methodology -file NEXYS4_DDR_methodology_drc_routed.rpt -pb NEXYS4_DDR_methodology_drc_routed.pb -rpx NEXYS4_DDR_methodology_drc_routed.rpx
 | Design       : NEXYS4_DDR
@@ -23,12 +23,15 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 38
+             Violations found: 196
 +-----------+------------------+------------------------------------------------+------------+
 | Rule      | Severity         | Description                                    | Violations |
 +-----------+------------------+------------------------------------------------+------------+
 | TIMING-6  | Critical Warning | No common primary clock between related clocks | 2          |
 | LUTAR-1   | Warning          | LUT drives async reset alert                   | 1          |
+| SYNTH-11  | Warning          | DSP output not registered                      | 7          |
+| SYNTH-13  | Warning          | combinational multiplier                       | 119        |
+| TIMING-16 | Warning          | Large setup violation                          | 32         |
 | TIMING-18 | Warning          | Missing input or output delay                  | 35         |
 +-----------+------------------+------------------------------------------------+------------+
 
@@ -47,6 +50,796 @@ Related violations: <none>
 LUTAR-1#1 Warning
 LUT drives async reset alert  
 LUT cell reset_sync/reset_syncbuf[3]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) reset_sync/reset_syncbuf_reg[0]/PRE, reset_sync/reset_syncbuf_reg[1]/PRE, reset_sync/reset_syncbuf_reg[2]/PRE, reset_sync/reset_syncbuf_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-11#1 Warning
+DSP output not registered  
+DSP instance teylor_arcsin/term2/genblk1[1].F_Mult/result2 is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#2 Warning
+DSP output not registered  
+DSP instance teylor_arcsin/term3/genblk1[1].F_Mult/result2 is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#3 Warning
+DSP output not registered  
+DSP instance teylor_arcsin/term4/genblk1[1].F_Mult/result2 is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#4 Warning
+DSP output not registered  
+DSP instance teylor_arcsin/term5/genblk1[1].F_Mult/result2 is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#5 Warning
+DSP output not registered  
+DSP instance teylor_arcsin/term6/genblk1[1].F_Mult/result2 is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#6 Warning
+DSP output not registered  
+DSP instance teylor_arcsin/term7/genblk1[1].F_Mult/result2 is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-11#7 Warning
+DSP output not registered  
+DSP instance teylor_arcsin/term8/genblk1[1].F_Mult/result2 is not fully pipelined on the output side. MREG/PREG are not used.
+Related violations: <none>
+
+SYNTH-13#1 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term2/F_MultWithCoeff/result2.
+Related violations: <none>
+
+SYNTH-13#2 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term2/F_MultWithCoeff/result2__0.
+Related violations: <none>
+
+SYNTH-13#3 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term2/genblk1[1].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#4 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term2/genblk1[2].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#5 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term2/genblk1[2].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#6 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term3/F_MultWithCoeff/result2.
+Related violations: <none>
+
+SYNTH-13#7 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term3/F_MultWithCoeff/result2__0.
+Related violations: <none>
+
+SYNTH-13#8 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term3/genblk1[1].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#9 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term3/genblk1[2].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#10 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term3/genblk1[2].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#11 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term3/genblk1[3].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#12 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term3/genblk1[3].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#13 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term3/genblk1[4].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#14 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term3/genblk1[4].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#15 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/F_MultWithCoeff/result2.
+Related violations: <none>
+
+SYNTH-13#16 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/F_MultWithCoeff/result2__0.
+Related violations: <none>
+
+SYNTH-13#17 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/genblk1[1].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#18 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/genblk1[2].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#19 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/genblk1[2].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#20 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/genblk1[3].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#21 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/genblk1[3].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#22 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/genblk1[4].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#23 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/genblk1[4].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#24 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/genblk1[5].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#25 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/genblk1[5].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#26 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/genblk1[6].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#27 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term4/genblk1[6].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#28 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/F_MultWithCoeff/result2.
+Related violations: <none>
+
+SYNTH-13#29 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/F_MultWithCoeff/result2__0.
+Related violations: <none>
+
+SYNTH-13#30 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[1].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#31 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[2].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#32 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[2].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#33 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[3].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#34 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[3].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#35 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[4].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#36 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[4].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#37 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[5].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#38 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[5].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#39 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[6].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#40 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[6].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#41 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[7].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#42 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[7].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#43 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[8].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#44 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term5/genblk1[8].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#45 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/F_MultWithCoeff/result2.
+Related violations: <none>
+
+SYNTH-13#46 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/F_MultWithCoeff/result2__0.
+Related violations: <none>
+
+SYNTH-13#47 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[10].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#48 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[10].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#49 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[1].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#50 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[2].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#51 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[2].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#52 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[3].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#53 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[3].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#54 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[4].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#55 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[4].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#56 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[5].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#57 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[5].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#58 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[6].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#59 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[6].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#60 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[7].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#61 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[7].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#62 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[8].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#63 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[8].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#64 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[9].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#65 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term6/genblk1[9].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#66 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/F_MultWithCoeff/result2.
+Related violations: <none>
+
+SYNTH-13#67 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/F_MultWithCoeff/result2__0.
+Related violations: <none>
+
+SYNTH-13#68 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[10].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#69 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[10].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#70 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[11].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#71 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[11].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#72 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[12].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#73 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[12].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#74 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[1].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#75 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[2].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#76 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[2].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#77 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[3].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#78 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[3].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#79 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[4].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#80 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[4].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#81 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[5].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#82 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[5].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#83 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[6].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#84 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[6].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#85 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[7].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#86 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[7].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#87 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[8].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#88 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[8].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#89 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[9].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#90 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term7/genblk1[9].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#91 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/F_MultWithCoeff/result2.
+Related violations: <none>
+
+SYNTH-13#92 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/F_MultWithCoeff/result2__0.
+Related violations: <none>
+
+SYNTH-13#93 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[10].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#94 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[10].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#95 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[11].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#96 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[11].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#97 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[12].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#98 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[12].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#99 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[13].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#100 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[13].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#101 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[14].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#102 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[14].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#103 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[1].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#104 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[2].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#105 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[2].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#106 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[3].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#107 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[3].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#108 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[4].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#109 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[4].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#110 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[5].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#111 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[5].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#112 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[6].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#113 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[6].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#114 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[7].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#115 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[7].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#116 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[8].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#117 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[8].F_Mult/result2__0.
+Related violations: <none>
+
+SYNTH-13#118 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[9].F_Mult/result2.
+Related violations: <none>
+
+SYNTH-13#119 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance teylor_arcsin/term8/genblk1[9].F_Mult/result2__0.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -102.337 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[0]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -102.596 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[1]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -102.947 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[3]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -102.993 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[5]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -103.148 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[2]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -103.185 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[4]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -103.250 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[20]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -103.258 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[17]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -103.299 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[21]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -103.313 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[16]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -103.414 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[23]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -103.430 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[10]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -103.495 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[22]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -103.515 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[24]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -103.518 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[25]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -103.519 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[11]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -103.523 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[12]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -103.554 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[8]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -103.588 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[18]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -103.623 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[7]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -103.645 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[9]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -103.659 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[15]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -103.666 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[27]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -103.668 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[19]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -103.685 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[14]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -103.686 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[26]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -103.736 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[28]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -103.748 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[13]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -103.774 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[29]/D (clocked by clk_out1_sys_clk_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -103.784 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[6]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -103.837 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[30]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -97.173 ns between csr_x_in_reg[21]_rep__1_replica/C (clocked by clk_out1_sys_clk) and csr_rdata_reg[31]/D (clocked by clk_out1_sys_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

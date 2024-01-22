@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1705850458">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1705914509">
   <File Type="PA-TCL" Name="NEXYS4_DDR.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="NEXYS4_DDR_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="NEXYS4_DDR_reports.tcl"/>
@@ -51,28 +51,28 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../AntonovLabi/activecore/designs/rtl/reset_sync/reset_sync.v">
+    <File Path="$PPRDIR/../../../../AntonovLabi/activecore/designs/rtl/reset_sync/reset_sync.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../AntonovLabi/activecore/designs/rtl/ram/ram_dual_memsplit.v">
+    <File Path="$PPRDIR/../../../../AntonovLabi/activecore/designs/rtl/ram/ram_dual_memsplit.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../AntonovLabi/activecore/designs/rtl/ram/ram.v">
+    <File Path="$PPRDIR/../../../../AntonovLabi/activecore/designs/rtl/ram/ram.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../AntonovLabi/activecore/designs/rtl/ram/ram_dual.v">
+    <File Path="$PPRDIR/../../../../AntonovLabi/activecore/designs/rtl/ram/ram_dual.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
