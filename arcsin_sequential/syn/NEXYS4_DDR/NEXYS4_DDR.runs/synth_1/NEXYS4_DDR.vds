@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Jan 21 20:22:32 2024
-# Process ID: 11444
+# Start of session at: Mon Jan 22 10:44:56 2024
+# Process ID: 1352
 # Current directory: C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1
 # Command line: vivado.exe -log NEXYS4_DDR.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NEXYS4_DDR.tcl
 # Log file: C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/NEXYS4_DDR.vds
@@ -16,9 +16,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6964 
+INFO: Helper process launched with PID 15404 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 821.020 ; gain = 177.211
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 821.242 ; gain = 177.898
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'NEXYS4_DDR' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.sv:24]
 	Parameter SIM bound to: NO - type: string 
@@ -29,8 +29,8 @@ INFO: [Synth 8-6157] synthesizing module 'NEXYS4_DDR' [C:/MyStudy/SystemOnChipLa
 	Parameter TESTMEM_ADDR bound to: -2147483648 - type: integer 
 	Parameter TESTMEM_WSIZE_POW bound to: 10 - type: integer 
 	Parameter TESTMEM_WSIZE bound to: 1024 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sys_clk' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-11444-DESKTOP-181Q9KE/realtime/sys_clk_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'sys_clk' (1#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-11444-DESKTOP-181Q9KE/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sys_clk' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-1352-DESKTOP-181Q9KE/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sys_clk' (1#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-1352-DESKTOP-181Q9KE/realtime/sys_clk_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'reset_sync' [C:/MyStudy/AntonovLabi/activecore/designs/rtl/reset_sync/reset_sync.v:1]
 	Parameter SYNC_STAGES bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'reset_sync' (2#1) [C:/MyStudy/AntonovLabi/activecore/designs/rtl/reset_sync/reset_sync.v:1]
@@ -104,6 +104,9 @@ INFO: [Synth 8-6157] synthesizing module 'TeylorAcrsin' [C:/MyStudy/SystemOnChip
 	Parameter k3 bound to: 1033476506 - type: integer 
 	Parameter k4 bound to: 1027005305 - type: integer 
 	Parameter k5 bound to: 1022944118 - type: integer 
+	Parameter k6 bound to: 1018643921 - type: integer 
+	Parameter k7 bound to: 1015949154 - type: integer 
+	Parameter k8 bound to: 1013238989 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'TeylorTerm' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
 	Parameter TERM_INDEX bound to: 0 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'FloatingMultiplication' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingMultiplication.v:2]
@@ -116,10 +119,6 @@ WARNING: [Synth 8-324] index 1 out of range [C:/MyStudy/SystemOnChipLabs/arcsin_
 WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
 WARNING: [Synth 8-7023] instance 'F_MultWithCoeff' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:72]
 INFO: [Synth 8-6155] done synthesizing module 'TeylorTerm' (9#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'FloatingAddSub' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v:151]
-INFO: [Synth 8-6157] synthesizing module 'priority_encoder' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'priority_encoder' (10#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'FloatingAddSub' (11#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v:151]
 INFO: [Synth 8-6157] synthesizing module 'TeylorTerm__parameterized0' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
 	Parameter TERM_INDEX bound to: 1 - type: integer 
 WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
@@ -127,7 +126,7 @@ WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has
 WARNING: [Synth 8-324] index 3 out of range [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
 WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
 WARNING: [Synth 8-7023] instance 'F_MultWithCoeff' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:72]
-INFO: [Synth 8-6155] done synthesizing module 'TeylorTerm__parameterized0' (11#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'TeylorTerm__parameterized0' (9#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'TeylorTerm__parameterized1' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
 	Parameter TERM_INDEX bound to: 2 - type: integer 
 WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
@@ -137,7 +136,7 @@ WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has
 WARNING: [Synth 8-324] index 5 out of range [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
 WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
 WARNING: [Synth 8-7023] instance 'F_MultWithCoeff' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:72]
-INFO: [Synth 8-6155] done synthesizing module 'TeylorTerm__parameterized1' (11#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'TeylorTerm__parameterized1' (9#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'TeylorTerm__parameterized2' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
 	Parameter TERM_INDEX bound to: 3 - type: integer 
 WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
@@ -149,7 +148,7 @@ WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has
 WARNING: [Synth 8-324] index 7 out of range [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
 WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
 WARNING: [Synth 8-7023] instance 'F_MultWithCoeff' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:72]
-INFO: [Synth 8-6155] done synthesizing module 'TeylorTerm__parameterized2' (11#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'TeylorTerm__parameterized2' (9#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'TeylorTerm__parameterized3' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
 	Parameter TERM_INDEX bound to: 4 - type: integer 
 WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
@@ -163,7 +162,67 @@ WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has
 WARNING: [Synth 8-324] index 9 out of range [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
 WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
 WARNING: [Synth 8-7023] instance 'F_MultWithCoeff' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:72]
-INFO: [Synth 8-6155] done synthesizing module 'TeylorTerm__parameterized3' (11#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'TeylorTerm__parameterized3' (9#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'TeylorTerm__parameterized4' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
+	Parameter TERM_INDEX bound to: 5 - type: integer 
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-324] index 11 out of range [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_MultWithCoeff' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:72]
+INFO: [Synth 8-6155] done synthesizing module 'TeylorTerm__parameterized4' (9#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'TeylorTerm__parameterized5' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
+	Parameter TERM_INDEX bound to: 6 - type: integer 
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-324] index 13 out of range [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_MultWithCoeff' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:72]
+INFO: [Synth 8-6155] done synthesizing module 'TeylorTerm__parameterized5' (9#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'TeylorTerm__parameterized6' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
+	Parameter TERM_INDEX bound to: 7 - type: integer 
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-324] index 15 out of range [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_Mult' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:61]
+WARNING: [Synth 8-7023] instance 'F_MultWithCoeff' of module 'FloatingMultiplication' has 7 connections declared, but only 4 given [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:72]
+INFO: [Synth 8-6155] done synthesizing module 'TeylorTerm__parameterized6' (9#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'FloatingAddSub' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v:151]
+INFO: [Synth 8-6157] synthesizing module 'priority_encoder' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'priority_encoder' (10#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FloatingAddSub' (11#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v:151]
+INFO: [Synth 8-4471] merging register 'result_reg[31:0]' into 'step_2_result_1_reg[31:0]' [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorAcrsin.sv:157]
+WARNING: [Synth 8-6014] Unused sequential element result_reg was removed.  [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorAcrsin.sv:157]
 INFO: [Synth 8-6155] done synthesizing module 'TeylorAcrsin' (12#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorAcrsin.sv:24]
 INFO: [Synth 8-6155] done synthesizing module 'NEXYS4_DDR' (13#1) [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.sv:24]
 WARNING: [Synth 8-3331] design FloatingMultiplication has unconnected port overflow
@@ -171,7 +230,7 @@ WARNING: [Synth 8-3331] design FloatingMultiplication has unconnected port under
 WARNING: [Synth 8-3331] design FloatingMultiplication has unconnected port exception
 WARNING: [Synth 8-3331] design FloatingMultiplication has unconnected port clk
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 886.148 ; gain = 242.340
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 886.773 ; gain = 243.430
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -184,46 +243,46 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 886.148 ; gain = 242.340
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 886.773 ; gain = 243.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 886.148 ; gain = 242.340
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 886.773 ; gain = 243.430
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-11444-DESKTOP-181Q9KE/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
-Finished Parsing XDC File [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-11444-DESKTOP-181Q9KE/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
+Parsing XDC File [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-1352-DESKTOP-181Q9KE/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
+Finished Parsing XDC File [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-1352-DESKTOP-181Q9KE/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
 Parsing XDC File [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
 Finished Parsing XDC File [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NEXYS4_DDR_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/NEXYS4_DDR_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1031.855 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1036.582 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1031.855 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1036.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1031.855 ; gain = 388.047
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1036.582 ; gain = 393.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1031.855 ; gain = 388.047
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1036.582 ; gain = 393.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-11444-DESKTOP-181Q9KE/sys_clk/sys_clk/sys_clk_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-11444-DESKTOP-181Q9KE/sys_clk/sys_clk/sys_clk_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-1352-DESKTOP-181Q9KE/sys_clk/sys_clk/sys_clk_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-1352-DESKTOP-181Q9KE/sys_clk/sys_clk/sys_clk_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for sys_clk. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1031.855 ; gain = 388.047
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1036.582 ; gain = 393.238
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
@@ -273,7 +332,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'udm_controller'
 INFO: [Synth 8-3971] The signal "ram_dual:/ram_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1031.855 ; gain = 388.047
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1036.582 ; gain = 393.238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -287,16 +346,16 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 5     
-	   2 Input     25 Bit       Adders := 15    
-	   2 Input     24 Bit       Adders := 5     
-	   3 Input      8 Bit       Adders := 70    
-	   2 Input      8 Bit       Adders := 10    
+	   2 Input     25 Bit       Adders := 21    
+	   2 Input     24 Bit       Adders := 7     
+	   3 Input      8 Bit       Adders := 158   
+	   2 Input      8 Bit       Adders := 14    
 	   2 Input      3 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 35    
+	   2 Input      1 Bit         XORs := 79    
 +---Registers : 
-	               32 Bit    Registers := 23    
+	               32 Bit    Registers := 26    
 	               29 Bit    Registers := 1     
 	               16 Bit    Registers := 1     
 	               10 Bit    Registers := 1     
@@ -308,24 +367,24 @@ Detailed RTL Component Info :
 +---RAMs : 
 	              32K Bit         RAMs := 1     
 +---Muxes : 
-	   2 Input     65 Bit        Muxes := 5     
-	   2 Input     32 Bit        Muxes := 18    
+	   2 Input     65 Bit        Muxes := 7     
+	   2 Input     32 Bit        Muxes := 22    
 	  14 Input     32 Bit        Muxes := 1     
 	   4 Input     32 Bit        Muxes := 1     
 	   8 Input     32 Bit        Muxes := 5     
 	   3 Input     32 Bit        Muxes := 1     
-	  26 Input     25 Bit        Muxes := 5     
-	   2 Input     25 Bit        Muxes := 5     
-	   2 Input     24 Bit        Muxes := 15    
-	   2 Input     23 Bit        Muxes := 35    
+	  26 Input     25 Bit        Muxes := 7     
+	   2 Input     25 Bit        Muxes := 7     
+	   2 Input     24 Bit        Muxes := 21    
+	   2 Input     23 Bit        Muxes := 79    
 	   2 Input     16 Bit        Muxes := 3     
 	   2 Input     10 Bit        Muxes := 2     
 	  14 Input      8 Bit        Muxes := 1     
 	   4 Input      8 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 37    
+	   2 Input      8 Bit        Muxes := 81    
 	   6 Input      8 Bit        Muxes := 1     
-	  26 Input      5 Bit        Muxes := 5     
+	  26 Input      5 Bit        Muxes := 7     
 	  14 Input      4 Bit        Muxes := 1     
 	  14 Input      3 Bit        Muxes := 1     
 	   4 Input      3 Bit        Muxes := 1     
@@ -335,7 +394,7 @@ Detailed RTL Component Info :
 	   8 Input      2 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 56    
 	  14 Input      1 Bit        Muxes := 7     
 	   4 Input      1 Bit        Muxes := 7     
 	   3 Input      1 Bit        Muxes := 3     
@@ -470,7 +529,7 @@ Detailed RTL Component Info :
 Module TeylorAcrsin 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 11    
+	               32 Bit    Registers := 14    
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -667,50 +726,269 @@ DSP Report: operator result2 is absorbed into DSP result2.
 DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator result2 is absorbed into DSP result2.
 DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: Generating DSP result2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result2 is absorbed into DSP result2.
+DSP Report: operator result2 is absorbed into DSP result2.
 WARNING: [Synth 8-3331] design FloatingMultiplication has unconnected port overflow
 WARNING: [Synth 8-3331] design FloatingMultiplication has unconnected port underflow
 WARNING: [Synth 8-3331] design FloatingMultiplication has unconnected port exception
 WARNING: [Synth 8-3331] design FloatingMultiplication has unconnected port clk
 WARNING: [Synth 8-6014] Unused sequential element testmem/ram_reg was removed. 
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[0]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[1]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[1]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[2]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[2]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[3]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[3]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[4]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[4]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[5]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[5]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[6]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[6]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[7]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[7]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[8]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[8]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[9]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[9]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[10]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[10]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[11]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[11]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[12]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[12]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[13]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[13]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[14]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[14]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[15]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[15]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[16]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[16]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[17]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[17]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[18]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[18]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[19]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[19]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[20]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[20]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[21]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[21]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[22]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[22]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[23]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[23]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[24]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[24]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[25]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[25]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[26]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[26]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[27]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[27]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[28]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[28]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[29]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[29]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[30]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_2_reg[30]' (FD) to 'teylor_arcsin/stage_1_input_2_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (teylor_arcsin/\stage_1_input_2_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\udm/udm_controller/tx_irq_reg )
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_1_input_1_reg[31]' (FD) to 'teylor_arcsin/stage_2_input_1_reg[31]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_2_input_1_reg[31]' (FD) to 'teylor_arcsin/stage_3_input_1_reg[31]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_3_input_1_reg[31]' (FD) to 'teylor_arcsin/stage_4_input_1_reg[31]'
-INFO: [Synth 8-3886] merging instance 'teylor_arcsin/stage_4_input_1_reg[31]' (FD) to 'teylor_arcsin/stage_5_input_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'teylor_arcsin/step_0_result_2_reg[31]' (FD) to 'teylor_arcsin/step_0_result_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'teylor_arcsin/step_0_result_1_reg[31]' (FD) to 'teylor_arcsin/step_0_result_4_reg[31]'
+INFO: [Synth 8-3886] merging instance 'teylor_arcsin/step_0_result_4_reg[31]' (FD) to 'teylor_arcsin/step_0_result_3_reg[31]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1031.855 ; gain = 388.047
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1036.582 ; gain = 393.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -729,6 +1007,90 @@ DSP: Preliminary Mapping  Report (see note below)
 +-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name            | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
@@ -808,13 +1170,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'sys_clk/clk_out1' to pin 'sys_clk/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1067.555 ; gain = 423.746
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1059.004 ; gain = 415.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.023 ; gain = 448.215
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1078.039 ; gain = 434.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -841,7 +1203,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6837] The timing for the instance testmem/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1213.758 ; gain = 569.949
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1137.629 ; gain = 494.285
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -865,7 +1227,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1218.566 ; gain = 574.758
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1142.852 ; gain = 499.508
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -878,7 +1240,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1218.566 ; gain = 574.758
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1142.852 ; gain = 499.508
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -890,25 +1252,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1218.566 ; gain = 574.758
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1142.852 ; gain = 499.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1218.566 ; gain = 574.758
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1142.852 ; gain = 499.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1218.566 ; gain = 574.758
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1142.887 ; gain = 499.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1218.566 ; gain = 574.758
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1142.887 ; gain = 499.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -926,18 +1288,18 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |sys_clk   |     1|
-|2     |CARRY4    |   296|
-|3     |DSP48E1   |    46|
-|4     |DSP48E1_1 |     4|
-|5     |LUT1      |   104|
-|6     |LUT2      |   321|
-|7     |LUT3      |  1233|
-|8     |LUT4      |   842|
-|9     |LUT5      |   480|
-|10    |LUT6      |  1241|
+|2     |CARRY4    |   174|
+|3     |DSP48E1   |    29|
+|4     |DSP48E1_1 |     3|
+|5     |LUT1      |    58|
+|6     |LUT2      |   138|
+|7     |LUT3      |   794|
+|8     |LUT4      |   490|
+|9     |LUT5      |   224|
+|10    |LUT6      |   586|
 |11    |RAMB36E1  |     1|
 |12    |FDPE      |     4|
-|13    |FDRE      |   776|
+|13    |FDRE      |   681|
 |14    |FDSE      |     3|
 |15    |IBUF      |    18|
 |16    |OBUF      |    17|
@@ -947,75 +1309,59 @@ Report Instance Areas:
 +------+--------------------------+---------------------------+------+
 |      |Instance                  |Module                     |Cells |
 +------+--------------------------+---------------------------+------+
-|1     |top                       |                           |  5388|
+|1     |top                       |                           |  3222|
 |2     |  reset_sync              |reset_sync                 |     7|
 |3     |  testmem                 |ram_dual                   |     1|
-|4     |  teylor_arcsin           |TeylorAcrsin               |  4308|
-|5     |    stage_2               |FloatingAddSub             |   123|
-|6     |      pe                  |priority_encoder_29        |   123|
-|7     |    stage_3               |FloatingAddSub_0           |   123|
-|8     |      pe                  |priority_encoder_28        |   123|
-|9     |    stage_4               |FloatingAddSub_1           |   123|
-|10    |      pe                  |priority_encoder_27        |   123|
-|11    |    stage_5               |FloatingAddSub_2           |     2|
-|12    |      pe                  |priority_encoder           |     2|
-|13    |    term1                 |TeylorTerm                 |    33|
-|14    |      F_MultWithCoeff     |FloatingMultiplication_26  |    33|
-|15    |    term2                 |TeylorTerm__parameterized0 |   140|
-|16    |      F_MultWithCoeff     |FloatingMultiplication_23  |    25|
-|17    |      \genblk1[1].F_Mult  |FloatingMultiplication_24  |    69|
-|18    |      \genblk1[2].F_Mult  |FloatingMultiplication_25  |    46|
-|19    |    term3                 |TeylorTerm__parameterized1 |   263|
-|20    |      F_MultWithCoeff     |FloatingMultiplication_18  |    25|
-|21    |      \genblk1[1].F_Mult  |FloatingMultiplication_19  |    58|
-|22    |      \genblk1[2].F_Mult  |FloatingMultiplication_20  |    62|
-|23    |      \genblk1[3].F_Mult  |FloatingMultiplication_21  |    73|
-|24    |      \genblk1[4].F_Mult  |FloatingMultiplication_22  |    45|
-|25    |    term4                 |TeylorTerm__parameterized2 |   385|
-|26    |      F_MultWithCoeff     |FloatingMultiplication_11  |    25|
-|27    |      \genblk1[1].F_Mult  |FloatingMultiplication_12  |    58|
-|28    |      \genblk1[2].F_Mult  |FloatingMultiplication_13  |    62|
-|29    |      \genblk1[3].F_Mult  |FloatingMultiplication_14  |    62|
-|30    |      \genblk1[4].F_Mult  |FloatingMultiplication_15  |    62|
-|31    |      \genblk1[5].F_Mult  |FloatingMultiplication_16  |    73|
-|32    |      \genblk1[6].F_Mult  |FloatingMultiplication_17  |    43|
-|33    |    term5                 |TeylorTerm__parameterized3 |   512|
-|34    |      F_MultWithCoeff     |FloatingMultiplication     |    32|
-|35    |      \genblk1[1].F_Mult  |FloatingMultiplication_3   |    58|
-|36    |      \genblk1[2].F_Mult  |FloatingMultiplication_4   |    62|
-|37    |      \genblk1[3].F_Mult  |FloatingMultiplication_5   |    62|
-|38    |      \genblk1[4].F_Mult  |FloatingMultiplication_6   |    62|
-|39    |      \genblk1[5].F_Mult  |FloatingMultiplication_7   |    62|
-|40    |      \genblk1[6].F_Mult  |FloatingMultiplication_8   |    62|
-|41    |      \genblk1[7].F_Mult  |FloatingMultiplication_9   |    74|
-|42    |      \genblk1[8].F_Mult  |FloatingMultiplication_10  |    38|
-|43    |  udm                     |udm                        |   893|
-|44    |    uart_rx               |uart_rx                    |   199|
-|45    |    uart_tx               |uart_tx                    |   127|
-|46    |    udm_controller        |udm_controller             |   567|
+|4     |  teylor_arcsin           |TeylorAcrsin               |  2146|
+|5     |    step_2_sum_1          |FloatingAddSub             |     2|
+|6     |      pe                  |priority_encoder           |     2|
+|7     |    term1                 |TeylorTerm                 |    33|
+|8     |      F_MultWithCoeff     |FloatingMultiplication_14  |    33|
+|9     |    term2                 |TeylorTerm__parameterized0 |   140|
+|10    |      F_MultWithCoeff     |FloatingMultiplication_11  |    25|
+|11    |      \genblk1[1].F_Mult  |FloatingMultiplication_12  |    69|
+|12    |      \genblk1[2].F_Mult  |FloatingMultiplication_13  |    46|
+|13    |    term3                 |TeylorTerm__parameterized1 |   263|
+|14    |      F_MultWithCoeff     |FloatingMultiplication_6   |    25|
+|15    |      \genblk1[1].F_Mult  |FloatingMultiplication_7   |    58|
+|16    |      \genblk1[2].F_Mult  |FloatingMultiplication_8   |    62|
+|17    |      \genblk1[3].F_Mult  |FloatingMultiplication_9   |    73|
+|18    |      \genblk1[4].F_Mult  |FloatingMultiplication_10  |    45|
+|19    |    term4                 |TeylorTerm__parameterized2 |   385|
+|20    |      F_MultWithCoeff     |FloatingMultiplication     |    31|
+|21    |      \genblk1[1].F_Mult  |FloatingMultiplication_0   |    58|
+|22    |      \genblk1[2].F_Mult  |FloatingMultiplication_1   |    62|
+|23    |      \genblk1[3].F_Mult  |FloatingMultiplication_2   |    62|
+|24    |      \genblk1[4].F_Mult  |FloatingMultiplication_3   |    62|
+|25    |      \genblk1[5].F_Mult  |FloatingMultiplication_4   |    73|
+|26    |      \genblk1[6].F_Mult  |FloatingMultiplication_5   |    37|
+|27    |  udm                     |udm                        |   893|
+|28    |    uart_rx               |uart_rx                    |   199|
+|29    |    uart_tx               |uart_tx                    |   127|
+|30    |    udm_controller        |udm_controller             |   567|
 +------+--------------------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1218.566 ; gain = 574.758
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1142.887 ; gain = 499.543
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1218.566 ; gain = 429.051
-Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1218.566 ; gain = 574.758
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1142.887 ; gain = 349.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1142.887 ; gain = 499.543
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 347 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 207 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1218.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1142.887 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-100 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+74 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 1218.566 ; gain = 832.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1218.566 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:02 . Memory (MB): peak = 1142.887 ; gain = 756.398
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1142.887 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/NEXYS4_DDR.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file NEXYS4_DDR_utilization_synth.rpt -pb NEXYS4_DDR_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jan 21 20:23:44 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 10:46:04 2024...

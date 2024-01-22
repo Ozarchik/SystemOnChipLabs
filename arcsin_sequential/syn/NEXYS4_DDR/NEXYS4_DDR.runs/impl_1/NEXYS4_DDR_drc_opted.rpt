@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jan 21 20:24:38 2024
+| Date         : Mon Jan 22 10:48:12 2024
 | Host         : DESKTOP-181Q9KE running 64-bit major release  (build 9200)
 | Command      : report_drc -file NEXYS4_DDR_drc_opted.rpt -pb NEXYS4_DDR_drc_opted.pb -rpx NEXYS4_DDR_drc_opted.rpx
 | Design       : NEXYS4_DDR
@@ -24,14 +24,14 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 133
+             Violations found: 83
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| DPIP-1   | Warning  | Input pipelining                                    | 82         |
-| DPOP-1   | Warning  | PREG Output pipelining                              | 25         |
-| DPOP-2   | Warning  | MREG Output pipelining                              | 25         |
+| DPIP-1   | Warning  | Input pipelining                                    | 50         |
+| DPOP-1   | Warning  | PREG Output pipelining                              | 16         |
+| DPOP-2   | Warning  | MREG Output pipelining                              | 16         |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -299,166 +299,6 @@ Input pipelining
 DSP teylor_arcsin/term4/genblk1[6].F_Mult/result2__0 input teylor_arcsin/term4/genblk1[6].F_Mult/result2__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
-DPIP-1#51 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/F_MultWithCoeff/result2 input teylor_arcsin/term5/F_MultWithCoeff/result2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#52 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[1].F_Mult/result2 input teylor_arcsin/term5/genblk1[1].F_Mult/result2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#53 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[1].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[1].F_Mult/result2__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#54 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[1].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[1].F_Mult/result2__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#55 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[2].F_Mult/result2 input teylor_arcsin/term5/genblk1[2].F_Mult/result2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#56 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[2].F_Mult/result2 input teylor_arcsin/term5/genblk1[2].F_Mult/result2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#57 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[2].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[2].F_Mult/result2__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#58 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[2].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[2].F_Mult/result2__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#59 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[3].F_Mult/result2 input teylor_arcsin/term5/genblk1[3].F_Mult/result2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#60 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[3].F_Mult/result2 input teylor_arcsin/term5/genblk1[3].F_Mult/result2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#61 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[3].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[3].F_Mult/result2__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#62 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[3].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[3].F_Mult/result2__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#63 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[4].F_Mult/result2 input teylor_arcsin/term5/genblk1[4].F_Mult/result2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#64 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[4].F_Mult/result2 input teylor_arcsin/term5/genblk1[4].F_Mult/result2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#65 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[4].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[4].F_Mult/result2__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#66 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[4].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[4].F_Mult/result2__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#67 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[5].F_Mult/result2 input teylor_arcsin/term5/genblk1[5].F_Mult/result2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#68 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[5].F_Mult/result2 input teylor_arcsin/term5/genblk1[5].F_Mult/result2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#69 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[5].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[5].F_Mult/result2__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#70 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[5].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[5].F_Mult/result2__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#71 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[6].F_Mult/result2 input teylor_arcsin/term5/genblk1[6].F_Mult/result2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#72 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[6].F_Mult/result2 input teylor_arcsin/term5/genblk1[6].F_Mult/result2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#73 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[6].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[6].F_Mult/result2__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#74 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[6].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[6].F_Mult/result2__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#75 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[7].F_Mult/result2 input teylor_arcsin/term5/genblk1[7].F_Mult/result2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#76 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[7].F_Mult/result2 input teylor_arcsin/term5/genblk1[7].F_Mult/result2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#77 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[7].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[7].F_Mult/result2__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#78 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[7].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[7].F_Mult/result2__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#79 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[8].F_Mult/result2 input teylor_arcsin/term5/genblk1[8].F_Mult/result2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#80 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[8].F_Mult/result2 input teylor_arcsin/term5/genblk1[8].F_Mult/result2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#81 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[8].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[8].F_Mult/result2__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#82 Warning
-Input pipelining  
-DSP teylor_arcsin/term5/genblk1[8].F_Mult/result2__0 input teylor_arcsin/term5/genblk1[8].F_Mult/result2__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
 DPOP-1#1 Warning
 PREG Output pipelining  
 DSP teylor_arcsin/term1/F_MultWithCoeff/result2__0 output teylor_arcsin/term1/F_MultWithCoeff/result2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
@@ -539,51 +379,6 @@ PREG Output pipelining
 DSP teylor_arcsin/term4/genblk1[6].F_Mult/result2__0 output teylor_arcsin/term4/genblk1[6].F_Mult/result2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
-DPOP-1#17 Warning
-PREG Output pipelining  
-DSP teylor_arcsin/term5/F_MultWithCoeff/result2__0 output teylor_arcsin/term5/F_MultWithCoeff/result2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#18 Warning
-PREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[1].F_Mult/result2__0 output teylor_arcsin/term5/genblk1[1].F_Mult/result2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#19 Warning
-PREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[2].F_Mult/result2__0 output teylor_arcsin/term5/genblk1[2].F_Mult/result2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#20 Warning
-PREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[3].F_Mult/result2__0 output teylor_arcsin/term5/genblk1[3].F_Mult/result2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#21 Warning
-PREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[4].F_Mult/result2__0 output teylor_arcsin/term5/genblk1[4].F_Mult/result2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#22 Warning
-PREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[5].F_Mult/result2__0 output teylor_arcsin/term5/genblk1[5].F_Mult/result2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#23 Warning
-PREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[6].F_Mult/result2__0 output teylor_arcsin/term5/genblk1[6].F_Mult/result2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#24 Warning
-PREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[7].F_Mult/result2__0 output teylor_arcsin/term5/genblk1[7].F_Mult/result2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#25 Warning
-PREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[8].F_Mult/result2__0 output teylor_arcsin/term5/genblk1[8].F_Mult/result2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
 DPOP-2#1 Warning
 MREG Output pipelining  
 DSP teylor_arcsin/term1/F_MultWithCoeff/result2__0 multiplier stage teylor_arcsin/term1/F_MultWithCoeff/result2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
@@ -662,51 +457,6 @@ Related violations: <none>
 DPOP-2#16 Warning
 MREG Output pipelining  
 DSP teylor_arcsin/term4/genblk1[6].F_Mult/result2__0 multiplier stage teylor_arcsin/term4/genblk1[6].F_Mult/result2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#17 Warning
-MREG Output pipelining  
-DSP teylor_arcsin/term5/F_MultWithCoeff/result2__0 multiplier stage teylor_arcsin/term5/F_MultWithCoeff/result2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#18 Warning
-MREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[1].F_Mult/result2__0 multiplier stage teylor_arcsin/term5/genblk1[1].F_Mult/result2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#19 Warning
-MREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[2].F_Mult/result2__0 multiplier stage teylor_arcsin/term5/genblk1[2].F_Mult/result2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#20 Warning
-MREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[3].F_Mult/result2__0 multiplier stage teylor_arcsin/term5/genblk1[3].F_Mult/result2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#21 Warning
-MREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[4].F_Mult/result2__0 multiplier stage teylor_arcsin/term5/genblk1[4].F_Mult/result2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#22 Warning
-MREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[5].F_Mult/result2__0 multiplier stage teylor_arcsin/term5/genblk1[5].F_Mult/result2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#23 Warning
-MREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[6].F_Mult/result2__0 multiplier stage teylor_arcsin/term5/genblk1[6].F_Mult/result2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#24 Warning
-MREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[7].F_Mult/result2__0 multiplier stage teylor_arcsin/term5/genblk1[7].F_Mult/result2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#25 Warning
-MREG Output pipelining  
-DSP teylor_arcsin/term5/genblk1[8].F_Mult/result2__0 multiplier stage teylor_arcsin/term5/genblk1[8].F_Mult/result2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 

@@ -1,14 +1,30 @@
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 |       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_4_input_2_reg[27]/D|
-|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_3_input_2_reg[23]/D|
-|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_3_input_2_reg[27]/D|
-|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_4_input_2_reg[23]/D|
-|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_3_input_2_reg[28]/D|
-|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_5_input_2_reg[27]/D|
-|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_3_input_2_reg[26]/D|
-|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                            teylor_arcsin/result_reg[23]/D|
-|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_5_input_2_reg[23]/D|
-|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                   teylor_arcsin/stage_3_input_2_reg[13]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[30]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[27]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[29]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[28]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[26]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[25]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[12]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[19]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[23]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[24]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[11]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[22]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[20]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[21]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[17]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[10]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[18]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[13]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                    teylor_arcsin/step_2_result_1_reg[7]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[16]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                    teylor_arcsin/step_2_result_1_reg[4]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                   teylor_arcsin/step_2_result_1_reg[14]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                    teylor_arcsin/step_2_result_1_reg[8]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                    teylor_arcsin/step_2_result_1_reg[3]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                    teylor_arcsin/step_2_result_1_reg[1]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                                                    teylor_arcsin/step_2_result_1_reg[2]/D|
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

@@ -3,6 +3,7 @@ from __future__ import division
 
 import udm
 from udm import *
+import struct
 
 udm = udm('COM4', 921600)
 print("")
@@ -21,8 +22,19 @@ TESTMEM_ADDR_READ     = 0x80000f00
 # test data initialization
 
 udm.wr32(TESTMEM_ADDR_WRITE, 0x3f000000)
-
+print("")
 print("x = 0.5:      ", hex(udm.rd32(TESTMEM_ADDR_WRITE)))
+print("arcsin(x) = : ", hex(udm.rd32(TESTMEM_ADDR_READ)))
+
+
+udm.wr32(TESTMEM_ADDR_WRITE, 0x3e4ccccd)
+print("")
+print("x = 0.2:      ", hex(udm.rd32(TESTMEM_ADDR_WRITE)))
+print("arcsin(x) = : ", hex(udm.rd32(TESTMEM_ADDR_READ)))
+
+udm.wr32(TESTMEM_ADDR_WRITE, 0x3f4ccccd)
+print("")
+print("x = 0.8:      ", hex(udm.rd32(TESTMEM_ADDR_WRITE)))
 print("arcsin(x) = : ", hex(udm.rd32(TESTMEM_ADDR_READ)))
 
 udm.memtest32(0x80000000, 512)

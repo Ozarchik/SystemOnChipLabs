@@ -28,140 +28,135 @@ module TeylorAcrsin(
     );
     
     
-    parameter logic[31:0] k1 = 32'h3f800000; // 0.1666667 
+    parameter logic[31:0] k1 = 32'h3f800000; // 1 
     parameter logic[31:0] k2 = 32'h3e2aaaad; // 0.1666667 
     parameter logic[31:0] k3 = 32'h3d99999a; // 0.0750000
     parameter logic[31:0] k4 = 32'h3d36db79; // 0.0446429
     parameter logic[31:0] k5 = 32'h3cf8e376; // 0.0303819
-    
-    
+    parameter logic[31:0] k6 = 32'h3cb745d1; // 0.0223722
+    parameter logic[31:0] k7 = 32'h3c8e2762; // 0.0173528
+    parameter logic[31:0] k8 = 32'h3c64cccd; // 0.0139648
 
+
+    // --------------------------------------------------------------------------------------------------------------------------
+    // Stage 0
+    // --------------------------------------------------------------------------------------------------------------------------
+
+    logic[31:0] result_term_1;
+    logic[31:0] result_term_2;
+    logic[31:0] result_term_3;
+    logic[31:0] result_term_4;
+    logic[31:0] result_term_5;
+    logic[31:0] result_term_6;
+    logic[31:0] result_term_7;
+    logic[31:0] result_term_8;
     
-    logic[31:0] term_result_2;
-    logic[31:0] term_result_3;
-    logic[31:0] term_result_4;
     
-    logic[31:0] y1;
-    logic[31:0] y2;
-    logic[31:0] y3;
-    logic[31:0] y4;
-    
+    TeylorTerm #(.TERM_INDEX(0)) term1(.clk(clk), .x(x), .term_coeff(k1), .y(result_term_1));
+    TeylorTerm #(.TERM_INDEX(1)) term2(.clk(clk), .x(x), .term_coeff(k2), .y(result_term_2));
+    TeylorTerm #(.TERM_INDEX(2)) term3(.clk(clk), .x(x), .term_coeff(k3), .y(result_term_3));
+    TeylorTerm #(.TERM_INDEX(3)) term4(.clk(clk), .x(x), .term_coeff(k4), .y(result_term_4));
+    TeylorTerm #(.TERM_INDEX(4)) term5(.clk(clk), .x(x), .term_coeff(k5), .y(result_term_5));
+    TeylorTerm #(.TERM_INDEX(5)) term6(.clk(clk), .x(x), .term_coeff(k6), .y(result_term_6));
+    TeylorTerm #(.TERM_INDEX(6)) term7(.clk(clk), .x(x), .term_coeff(k7), .y(result_term_7));
+    TeylorTerm #(.TERM_INDEX(7)) term8(.clk(clk), .x(x), .term_coeff(k8), .y(result_term_8));
         
+    logic[31:0] step_0_result_1;
+    logic[31:0] step_0_result_2;
+    logic[31:0] step_0_result_3;
+    logic[31:0] step_0_result_4;
+    logic[31:0] step_0_result_5;
+    logic[31:0] step_0_result_6;
+    logic[31:0] step_0_result_7;
+    logic[31:0] step_0_result_8;
+    
+    always@(posedge clk)
+    begin
+        step_0_result_1 <= result_term_1;
+        step_0_result_2 <= result_term_2;
+        step_0_result_3 <= result_term_3;
+        step_0_result_4 <= result_term_4;
+        step_0_result_5 <= result_term_5;
+        step_0_result_6 <= result_term_6;
+        step_0_result_7 <= result_term_7;
+        step_0_result_8 <= result_term_8;
+    end
+    
+    
+    
     // --------------------------------------------------------------------------------------------------------------------------
     // Stage 1
     // --------------------------------------------------------------------------------------------------------------------------
 
-    logic[31:0] result_term_1;
-    TeylorTerm #(.TERM_INDEX(0)) term1(.clk(clk), .x(x), .term_coeff(k1), .y(result_term_1));
     
-    logic[31:0] stage_1_input_1;
-    logic[31:0] stage_1_input_2;
+    logic[31:0] step_1_terms_sum_1;
+    logic[31:0] step_1_terms_sum_2;
+    logic[31:0] step_1_terms_sum_3;
+    logic[31:0] step_1_terms_sum_4;
+    logic step_1_exception1;
+    logic step_1_exception2;
+    logic step_1_exception3;
+    logic step_1_exception4;
+    
+    FloatingAddSub step_1_sum_1(.a(step_0_result_1), .b(step_0_result_2), .add_sub_signal(1'b0), .exception(step_1_exception1), .res(step_1_terms_sum_1));
+    FloatingAddSub step_1_sum_2(.a(step_0_result_3), .b(step_0_result_4), .add_sub_signal(1'b0), .exception(step_1_exception2), .res(step_1_terms_sum_2));
+    FloatingAddSub step_1_sum_3(.a(step_0_result_5), .b(step_0_result_6), .add_sub_signal(1'b0), .exception(step_1_exception3), .res(step_1_terms_sum_3));
+    FloatingAddSub step_1_sum_4(.a(step_0_result_7), .b(step_0_result_8), .add_sub_signal(1'b0), .exception(step_1_exception4), .res(step_1_terms_sum_4));
+    
+    
+    logic[31:0] step_1_result_1;
+    logic[31:0] step_1_result_2;
+    logic[31:0] step_1_result_3;
+    logic[31:0] step_1_result_4;
     
     always@(posedge clk)
     begin
-        stage_1_input_1 <= result_term_1;
-        stage_1_input_2 <= 0;
+        step_1_result_1 <= step_1_terms_sum_1;
+        step_1_result_2 <= step_1_terms_sum_2;
+        step_1_result_3 <= step_1_terms_sum_3;
+        step_1_result_4 <= step_1_terms_sum_4;
     end
-    
-    logic exception1;
-    logic[31:0] stage_1_result;
-    FloatingAddSub stage_1 (.a(stage_1_input_1), .b(stage_1_input_2), .add_sub_signal(1'b0), .exception(exception1), .res(stage_1_result));
-    
+
     
     // --------------------------------------------------------------------------------------------------------------------------
     // Stage 2
     // --------------------------------------------------------------------------------------------------------------------------
+
     
-    logic[31:0] term_2_result;
-    TeylorTerm #(.TERM_INDEX(1)) term2(.clk(clk), .x(x), .term_coeff(k2), .y(term_2_result));
+    logic[31:0] step_2_terms_sum_1;
+    logic[31:0] step_2_terms_sum_2;
+    logic step_2_exception1;
+    logic step_2_exception2;
     
-    logic[31:0] stage_2_input_1;
-    logic[31:0] stage_2_input_2;
+    FloatingAddSub step_2_sum_1(.a(step_1_result_1), .b(step_1_result_2), .add_sub_signal(1'b0), .exception(step_2_exception1), .res(step_2_terms_sum_1));
+    FloatingAddSub step_2_sum_2(.a(step_1_result_3), .b(step_1_result_4), .add_sub_signal(1'b0), .exception(step_2_exception2), .res(step_2_terms_sum_2));
+    
+    
+    logic[31:0] step_2_result_1;
+    logic[31:0] step_2_result_2;
     
     always@(posedge clk)
     begin
-        stage_2_input_1 <= term_2_result;
-        stage_2_input_2 <= stage_1_result;
+        step_2_result_1 <= step_2_terms_sum_1;
+        step_2_result_2 <= step_2_terms_sum_2;
     end
     
-    logic[31:0] stage_2_result;
-    logic exception2;
-    FloatingAddSub stage_2(.a(stage_2_input_1), .b(stage_2_input_2), .add_sub_signal(1'b0), .exception(exception2), .res(stage_2_result));
-    
-   
-      
+        
     // --------------------------------------------------------------------------------------------------------------------------
     // Stage 3
     // --------------------------------------------------------------------------------------------------------------------------
+
+
+    logic[31:0] step_3_terms_sum;
+    logic step_3_exception;
     
-    logic[31:0] term_3_result;
-    TeylorTerm #(.TERM_INDEX(2)) term3(.clk(clk), .x(x), .term_coeff(k3), .y(term_3_result));
-    
-    logic[31:0] stage_3_input_1;
-    logic[31:0] stage_3_input_2;
-    
-    always@(posedge clk)
-    begin
-        stage_3_input_1 <= term_3_result;
-        stage_3_input_2 <= stage_2_result;
-    end
-    
-    logic[31:0] stage_3_result;
-    logic exception3;
-    FloatingAddSub stage_3(.a(stage_3_input_1), .b(stage_3_input_2), .add_sub_signal(1'b0), .exception(exception3), .res(stage_3_result));
-    
-   
-   
-    // --------------------------------------------------------------------------------------------------------------------------
-    // Stage 4
-    // --------------------------------------------------------------------------------------------------------------------------
-    
-    logic[31:0] term_4_result;
-    TeylorTerm #(.TERM_INDEX(3)) term4(.clk(clk), .x(x), .term_coeff(k4), .y(term_4_result));
-    
-    logic[31:0] stage_4_input_1;
-    logic[31:0] stage_4_input_2;
+    FloatingAddSub step_3_sum(.a(step_2_result_1), .b(step_2_result_2), .add_sub_signal(1'b0), .exception(step_3_exception), .res(step_3_terms_sum));
     
     always@(posedge clk)
     begin
-        stage_4_input_1 <= term_4_result;
-        stage_4_input_2 <= stage_3_result;
+        result <= step_2_terms_sum_1;
     end
     
-    logic[31:0] stage_4_result;
-    logic exception4;
-    FloatingAddSub stage_4(.a(stage_4_input_1), .b(stage_4_input_2), .add_sub_signal(1'b0), .exception(exception4), .res(stage_4_result));
-    
-   
-   
-    // --------------------------------------------------------------------------------------------------------------------------
-    // Stage 5
-    // --------------------------------------------------------------------------------------------------------------------------
-    
-    logic[31:0] term_5_result;
-    TeylorTerm #(.TERM_INDEX(4)) term5(.clk(clk), .x(x), .term_coeff(k5), .y(term_5_result));
-    
-    logic[31:0] stage_5_input_1;
-    logic[31:0] stage_5_input_2;
-    
-    always@(posedge clk)
-    begin
-        stage_5_input_1 <= term_5_result;
-        stage_5_input_2 <= stage_4_result;
-    end
-    
-    logic[31:0] stage_5_result;
-    logic exception5;
-    FloatingAddSub stage_5(.a(stage_5_input_1), .b(stage_5_input_2), .add_sub_signal(1'b0), .exception(exception5), .res(stage_5_result));
-    
-   
-    // --------------------------------------------------------------------------------------------------------------------------
-    // Final
-    // --------------------------------------------------------------------------------------------------------------------------
-    
-    always@(posedge clk)
-        begin
-            result <= stage_5_result;
-        end
+ 
             
 endmodule

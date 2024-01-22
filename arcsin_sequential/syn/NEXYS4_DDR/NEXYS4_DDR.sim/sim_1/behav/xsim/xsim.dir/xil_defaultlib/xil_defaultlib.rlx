@@ -17,7 +17,7 @@ C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.ip_user_
 C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
 C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.v,1705847679,verilog,,,,FloatingAddSub;priority_encoder,,,,,,,,
 C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingMultiplication.v,1705839341,verilog,,,,FloatingMultiplication,,,,,,,,
-C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorAcrsin.sv,1705854483,systemVerilog,,,,TeylorAcrsin,,,,,,,,
+C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorAcrsin.sv,1705905229,systemVerilog,,,,TeylorAcrsin,,,,,,,,
 C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TeylorTerm.sv,1705843390,systemVerilog,,,,TeylorTerm,,,,,,,,
 C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.sv,1705857679,systemVerilog,,,,MemSplit32;NEXYS4_DDR,,,,,,,,
 C:/MyStudy/SystemOnChipLabs/arcsin_sequential/tb/tb.sv,1705855086,systemVerilog,,C:/MyStudy/SystemOnChipLabs/arcsin_sequential/syn/NEXYS4_DDR/NEXYS4_DDR.sv,C:/MyStudy/SystemOnChipLabs/arcsin_sequential/tb/udm.svh,tb,,,,,,,,
